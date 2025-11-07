@@ -140,27 +140,10 @@ body {
 .hb2 { top: 15%; right: 30%; width: 90px; height: 90px; animation: float 7.5s infinite; }
 .hb3 { bottom: -22px; right: 17%; width: 120px; height: 120px; animation: float 5s infinite; }
 
-
-.gallery-track {
-  display: flex;
-  gap: 16px;
-  width: max-content;
-  will-change: transform;
-  /* tidak pakai animation lagi, JS yang gerakin */
-}
-
-
-
-@keyframes scrollLoop {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
-
 @keyframes float {
   0%,100% { transform: translateY(0); }
   50% { transform: translateY(12px); }
 }
-
 
 /* scroll hint */
 .scroll-hint {
