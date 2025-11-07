@@ -23,6 +23,7 @@ const GALLERY_IMAGES = [
   { src: "image/IMG-20251105-WA0012.jpg", alt: "" },
   { src: "image/IMG-20251105-WA0013.jpg", alt: "" },
   { src: "image/IMG-20251105-WA0014.jpg", alt: "" },
+  { src: "image/IMG-20251105-WA0015.jpg", alt: "" },
   { src: "image/IMG-20251105-WA0016.jpg", alt: "" },
   { src: "image/IMG-20251105-WA0017.jpg", alt: "" },
 
@@ -67,23 +68,6 @@ function addGallerySet() {
 }
 addGallerySet();
 addGallerySet(); // duplicate for seamless scroll
-
-// ===== marquee manual biar pelan dan konsisten =====
-let offset = 0;
-// semakin kecil angkanya, semakin pelan
-const SPEED = 0.1; // coba 0.15 kalau masih terasa cepat
-
-function animateGallery() {
-  offset -= SPEED;
-  // setengah lebar track (karena kita duplikat 2x)
-  const resetPoint = galleryTrack.scrollWidth / 2;
-  if (Math.abs(offset) >= resetPoint) {
-    offset = 0;
-  }
-  galleryTrack.style.transform = `translateX(${offset}px)`;
-  requestAnimationFrame(animateGallery);
-}
-animateGallery();
 
 
 // ===== intersection observer =====
@@ -139,4 +123,3 @@ document.querySelectorAll("button, .music-toggle, .scroll-hint").forEach(el => {
   el.addEventListener("mouseenter", activateCursor);
   el.addEventListener("mouseleave", deactivateCursor);
 });
-
