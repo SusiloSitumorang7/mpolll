@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Love Story</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- custom cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+
+  <!-- HERO / INTRO -->
+  <header class="hero" id="intro">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <p class="hero-pill">for someone very special</p>
+        <h1 class="hero-title">Our Love Story</h1>
+        <p class="hero-text">Aku menuliskan ini supaya kamu tahu: setiap momen bersamamu berarti, dan aku ingin kamu bisa membacanya lagi kapan saja.</p>
+        <div class="hero-actions">
+          <button class="btn primary" data-scroll="#our-story">Mulai baca cerita</button>
+          <button class="btn ghost" data-scroll="#gallery">Lihat kenangan</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card floating">
+          <p class="hc-small">“ I still choose you. ”</p>
+          <p class="hc-name">— me</p>
+        </div>
+        <div class="hero-bubble hb1"></div>
+        <div class="hero-bubble hb2"></div>
+        <div class="hero-bubble hb3"></div>
+      </div>
+    </div>
+    <div class="scroll-hint" data-scroll="#our-story">
+      <span>Scroll untuk melanjutkan</span>
+      <div class="sh-arrow">↓</div>
+    </div>
+  </header>
+
+  <main>
+    <!-- TIMELINE CERITA -->
+    <section class="section" id="our-story">
+      <div class="section-head">
+        <h2>Cerita Kita</h2>
+        <p>Versi singkat bagaimana semesta bikin kita akhirnya saling temukan.</p>
+      </div>
+      <div class="timeline" id="storyTimeline">
+        <!-- diisi via script.js -->
+      </div>
+    </section>
+
+    <!-- LOVE NOTES -->
+    <section class="section soft" id="love-notes">
+      <div class="section-head">
+        <h2>Love Notes</h2>
+        <p>Potongan kalimat yang muncul di kepalaku setiap kali mengingat kamu.</p>
+      </div>
+      <div class="notes-grid" id="notesGrid">
+        <!-- diisi via script.js -->
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="section-head">
+        <h2>Galeri Kenangan</h2>
+        <p>Beberapa foto yang jadi saksi betapa hangatnya waktu itu.</p>
+      </div>
+      <div class="gallery-shell">
+        <div class="gallery-track" id="galleryTrack">
+          <!-- diisi via script.js -->
+        </div>
+        <div class="gallery-fade gf-left"></div>
+        <div class="gallery-fade gf-right"></div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="section final" id="final">
+      <div class="final-overlay"></div>
+      <div class="final-content" id="finalContent">
+        <h2>Terima kasih sudah jadi rumah.</h2>
+        <p>Semoga halaman ini bisa jadi tempat kamu kembali ketika hari terasa penuh.</p>
+        <p class="small">— seseorang yang menyayangimu lebih dari yang terlihat</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- tombol musik -->
+  <button class="music-toggle" id="musicToggle" title="Putar / hentikan musik">♫</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
