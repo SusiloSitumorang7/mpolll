@@ -16,15 +16,15 @@ const LOVE_NOTES = [
 ];
 
 const GALLERY_IMAGES = [
-  { src: "image/IMG-20251105-WA0017.jpg", alt: "Momen kita 1" },
-  { src: "image/IMG-20251105-WA0009.jpg", alt: "Momen kita 2" },
-  { src: "image/IMG-20251105-WA0010.jpg", alt: "Momen kita 3" },
-  { src: "image/IMG-20251105-WA0011.jpg", alt: "Momen kita 4" },
-  { src: "image/IMG-20251105-WA0012.jpg", alt: "Momen kita 5" },
-  { src: "image/IMG-20251105-WA0013.jpg", alt: "Momen kita " },
-  { src: "image/IMG-20251105-WA0014.jpg", alt: "Momen kita 3" },
-  { src: "image/IMG-20251105-WA0016.jpg", alt: "Momen kita 1" },
-  { src: "image/IMG-20251105-WA0017.jpg", alt: "Momen kita 2" },
+  { src: "image/IMG-20251105-WA0017.jpg", alt: "" },
+  { src: "image/IMG-20251105-WA0009.jpg", alt: "" },
+  { src: "image/IMG-20251105-WA0010.jpg", alt: "" },
+  { src: "image/IMG-20251105-WA0011.jpg", alt: "" },
+  { src: "image/IMG-20251105-WA0012.jpg", alt: "" },
+  { src: "image/IMG-20251105-WA0013.jpg", alt: "" },
+  { src: "image/IMG-20251105-WA0014.jpg", alt: "" },
+  { src: "image/IMG-20251105-WA0016.jpg", alt: "" },
+  { src: "image/IMG-20251105-WA0017.jpg", alt: "" },
 
 ];
 
@@ -139,3 +139,4 @@ document.querySelectorAll("button, .music-toggle, .scroll-hint").forEach(el => {
   el.addEventListener("mouseenter", activateCursor);
   el.addEventListener("mouseleave", deactivateCursor);
 });
+
